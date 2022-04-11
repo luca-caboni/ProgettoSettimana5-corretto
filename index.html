@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    <title>Gioco Memory in JS</title>
+</head>
+<body>
+    <h1 class="text-center">Gioco Memory in JS</h1>
+<div class="container icon-grid" id="griglia"></div>
+    <div class="container text-center">  
+      <input type="button" id="button" class="button" onclick="startGame()" value="Ricomincia">
+      <div class="timer">Tempo: 0 min 0 sec</div>
+    </div>
+  
+    <div id="modal">      
+      <div class="content">
+          <h2>Congratulazioni! Hai risolto il gioco in:</h2>
+          <p>------>  <span id="tempoTrascorso"> </span> </p>
+          <p><input type="button" class="button" onclick="playAgain()" value="Gioca Ancora!"></p>
+      </div>        
+    </div>
+    <script src="js/memory.js"></script>
+  </body>
+</html>
